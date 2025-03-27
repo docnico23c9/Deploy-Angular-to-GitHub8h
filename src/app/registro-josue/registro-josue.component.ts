@@ -14,7 +14,6 @@ export class RegistroJosueComponent {
 
   onSubmit() {
     console.log('Datos del formulario:', this.registro);
-    // Aquí puedes agregar lógica para enviar los datos a un servidor o procesarlos.
     alert('Registro exitoso: ' + JSON.stringify(this.registro));
   }
 }
