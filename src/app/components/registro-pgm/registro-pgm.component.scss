@@ -1,0 +1,87 @@
+// Estilos generales
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #72BF78, #A0D683, #D3EE98, #FEFF9F);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  // Contenedor principal del formulario
+  .registro-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  // Título del formulario
+  h2 {
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  // Estilo de los campos
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+      color: #555;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+  
+      &:focus {
+        border-color: #72BF78;
+        outline: none;
+        box-shadow: 0 0 8px rgba(114, 191, 120, 0.5);
+      }
+    }
+  }
+  
+  // Botón de registro
+  .btn-primary {
+    background: #72BF78;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background 0.3s;
+  
+    &:hover {
+      background: #5aa464;
+    }
+  }
+  
+  // Animación para la entrada del formulario
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
