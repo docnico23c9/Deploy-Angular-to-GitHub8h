@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" #registroForm="ngForm">
+  <label for="username">Nombre de usuario:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="registro.username" required />
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" id="email" name="email" [(ngModel)]="registro.email" required />
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="registro.password" required />
+
+  <button type="submit" [disabled]="!registroForm.valid">Registrarse</button>
+</form>
